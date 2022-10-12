@@ -46,7 +46,7 @@ nav ul > li {
 }
 
 main {
-  margin: 5rem;
+  margin: 0 5rem;
   position: relative;
   padding: 1rem 5rem;
 }
@@ -81,6 +81,7 @@ h1 {
 .features {
   width: 100%;
   box-shadow: 0 0 10px #808080;
+  overflow: hidden;
 
   /* height: 500px; */
   background-color: #fff;
@@ -233,6 +234,10 @@ nav ul > li:hover,
     height: unset;
   }
 
+  .swiper-slide {
+    width: 250px;
+  }
+
   .image-slider {
     width: 100%;
   }
@@ -340,11 +345,12 @@ nav ul > li:hover,
     z-index: -1;
     padding: 1rem;
     padding-bottom: 4rem;
+    height: 100%;
   }
 
   .login {
-    position: absolute;
-    bottom: 50px;
+    box-shadow: 0 0 5px #bebebe;
+    padding: 1rem 2rem;
   }
 
   .hide {
@@ -355,9 +361,9 @@ nav ul > li:hover,
 @media screen and (max-width: 800px) {
   main {
     margin: unset;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 0.5rem;
 
-    margin: 2rem;
+    margin: 0.5rem;
   }
 
   .background {
@@ -367,6 +373,10 @@ nav ul > li:hover,
   .title,
   .features {
     border-radius: 1.5rem;
+  }
+
+  .swiper-slide {
+    width: 150px;
   }
 }
 
