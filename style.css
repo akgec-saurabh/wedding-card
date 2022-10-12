@@ -15,10 +15,15 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 10px 60px;
+  width: 100%;
 }
 
 header img {
   height: 50px;
+}
+
+#menu {
+  display: none;
 }
 nav ul {
   display: flex;
@@ -229,5 +234,60 @@ main h2 {
     flex-direction: row;
     /* background-color: aqua; */
     width: 100%;
+  }
+
+  main {
+    margin: unset;
+    padding: 5px 15px;
+
+    margin: 15px;
+  }
+  .title {
+    margin: unset;
+  }
+
+  /* menu  */
+
+  /* header */
+  header {
+    margin: unset;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px #bebebe;
+  }
+
+  #menu {
+    display: unset;
+    margin: auto 20px;
+    cursor: pointer;
+    width: 20px;
+    position: absolute;
+    left: 0;
+  }
+
+  #menu-list {
+    flex-direction: column;
+    gap: unset;
+  }
+  nav {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 5px #bebebe;
+    width: 100%;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .hide {
+    display: none;
   }
 }

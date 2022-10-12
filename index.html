@@ -15,9 +15,12 @@
 
   <body>
     <header>
-      <img src="./assets/Logo.png" alt="logo" />
+      <div class="navbar">
+        <ion-icon id="menu" name="menu-outline"></ion-icon>
+        <img src="./assets/Logo.png" alt="logo" />
+      </div>
       <nav>
-        <ul>
+        <ul id="menu-list">
           <li>Wedding Cards</li>
           <li>Birthday Cards</li>
           <li>Feeling Cards</li>
@@ -81,5 +84,13 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
