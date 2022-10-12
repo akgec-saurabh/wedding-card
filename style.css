@@ -368,6 +368,7 @@ nav ul > li:hover,
 
   .background {
     border-radius: 1.5rem;
+    height: 200px;
   }
 
   .title,
