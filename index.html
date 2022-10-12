@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/Logo.png" alt="logo" />
+      <nav>
+        <ul>
+          <li>Wedding Cards</li>
+          <li>Birthday Cards</li>
+          <li>Feeling Cards</li>
+          <li>Anniversary Cards</li>
+        </ul>
+      </nav>
+      <div>Login | SignUp</div>
+    </header>
+    <main>
+      <img class="background" src="./assets/Background.jpg" alt="" />
+      <h1>Digital Card Details</h1>
+      <div class="title">
+        <div class="image-slider">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/Page1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/Page2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/Page3.jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="image-title">
+          <div id="line"></div>
+          <h2 id="h2">Card Title</h2>
+          <div id="price" class="price">
+            <span>$499</span><span>$2000</span> <span>75% Off</span>
+          </div>
+          <div id="para">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+              hic amet rem perspiciatis exercitationem officia, rerum, nostrum
+              totam eveniet sint quae quos pariatur eius deleniti
+            </p>
+          </div>
+          <button id="try">Try this Card</button>
+        </div>
+      </div>
+      <h2>Features</h2>
+      <div class="features">
+        <div class="feature">
+          <img src="./assets/dummy-feature.png" alt="feature" />
+          <p>Create your card in just 5 mins</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/dummy-feature.png" alt="feature" />
+          <p>Customize the Text with "Edit this Page" Option</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/dummy-feature.png" alt="feature" />
+          <p>Editing is available after purchase also</p>
+        </div>
+      </div>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
