@@ -235,7 +235,7 @@ nav ul > li:hover,
   }
 
   .swiper-slide {
-    width: 250px;
+    width: 300px;
   }
 
   .image-slider {
@@ -376,10 +376,16 @@ nav ul > li:hover,
   }
 
   .swiper-slide {
-    width: 150px;
+    width: 250px;
   }
 }
+.feature img {
+  width: 150px;
+}
 
-p {
+.title p {
   color: gray;
+}
+.feature p {
+  font-size: 1.2rem;
 }
