@@ -14,7 +14,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
   padding: 0 60px;
   width: 100%;
 }
@@ -26,17 +25,35 @@ header img {
 #menu {
   display: none;
 }
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 nav ul {
   display: flex;
+  height: 100%;
   list-style-type: none;
   justify-content: center;
   align-items: center;
   gap: 50px;
 }
+
+nav ul > li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
 main {
   margin: 5rem;
   position: relative;
-  padding: 1rem 4rem;
+  padding: 1rem 5rem;
+}
+
+.login {
+  padding: 1rem;
+  cursor: pointer;
 }
 
 .background {
@@ -56,34 +73,44 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.title {
+  height: 600px;
+}
+
 .title,
 .features {
   width: 100%;
+  box-shadow: 0 0 10px #808080;
 
   /* height: 500px; */
   background-color: #fff;
   border-radius: 5rem;
   border: 1px solid gray;
   display: flex;
+  align-items: center;
 }
 
 .image-slider {
-  width: 65%;
+  width: 60%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .image-title {
-  width: 35%;
-  height: 100%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px 50px;
+  padding: 30px 30px;
   text-align: center;
+  max-width: 400px;
 }
 
 h2 {
   margin-top: 1rem;
   text-align: center;
+  font-size: 2rem;
 }
 
 .price {
@@ -106,14 +133,15 @@ h2 {
 
 .image-title p {
   text-align: justify;
-  margin: 1rem;
+  padding: 1.5rem;
+  font-size: 1rem;
 }
 
 .image-title button {
   background-color: #000;
   padding: 1rem 1rem;
   color: #fff;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
 }
 
 /* Second Box  */
@@ -121,15 +149,17 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 350px;
+  flex-basis: 300px;
 }
 .feature {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25%;
   padding: 0.5rem;
 }
+
 .feature img {
   width: 180px;
 }
@@ -161,7 +191,7 @@ main h2 {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 150px;
+  width: 200px;
   height: max-content;
 }
 
@@ -189,10 +219,18 @@ main h2 {
   background-color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 800px) {
+nav ul > li:hover,
+.login:hover {
+  text-decoration-line: underline;
+}
+
+/* ----------------------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
   .title {
     display: flex;
     flex-direction: column;
+    height: unset;
   }
 
   .image-slider {
@@ -230,21 +268,34 @@ main h2 {
   .features {
     flex-direction: column;
     padding: 1rem;
+    height: unset;
   }
   .feature {
     flex-direction: row;
-    /* background-color: aqua; */
     width: 100%;
+    justify-content: space-evenly;
+    /* max-width: 500px; */
+  }
+  .feature img {
+    margin-right: 50px;
+  }
+
+  .feature p {
+    text-align: start;
+    width: 250px;
   }
 
   main {
     margin: unset;
-    padding: 5px 15px;
+    padding: 0.5rem 2rem;
 
-    margin: 15px;
+    margin: 2rem;
   }
   .title {
     margin: unset;
+  }
+  .image-title button {
+    border-radius: 2rem;
   }
 
   /* menu  */
@@ -254,6 +305,7 @@ main h2 {
     margin: unset;
     justify-content: center;
     flex-direction: column;
+    padding: unset;
   }
 
   .navbar {
@@ -298,4 +350,26 @@ main h2 {
   .hide {
     display: none;
   }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    margin: unset;
+    padding: 0.5rem 2rem;
+
+    margin: 2rem;
+  }
+
+  .background {
+    border-radius: 1.5rem;
+  }
+
+  .title,
+  .features {
+    border-radius: 1.5rem;
+  }
+}
+
+p {
+  color: gray;
 }
