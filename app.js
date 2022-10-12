@@ -20,7 +20,9 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 const menu = document.querySelector("#menu");
+const login = document.querySelector(".login");
 const nav = document.querySelector("nav");
 menu.addEventListener("click", () => {
   nav.classList.toggle("hide");
+  login.classList.toggle("hide");
 });
